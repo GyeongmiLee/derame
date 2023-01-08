@@ -1,0 +1,82 @@
+/* 폰트 */
+@font-face {
+    font-family: 'KyoboHand';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@1.0/KyoboHand.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+body{
+    font-family: 'KyoboHand';
+    background-color: rgb(222 230 243);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+/* 650 이상일때는 640으로 고정 */
+@media (min-width: 650px){
+    .App{
+        width: 640px;
+    }
+}
+/* 650 이하일때는 화면기준 90% */
+@media (max-width: 650px){
+    .App{
+        width: 90vw;
+    }
+}
+#root{
+    background-color: white;
+    box-shadow: rgba(100,100,111,0.2) 0px 7px 29px 0px;
+    border-radius: 25px;
+}
+.App{
+    min-height: 100vh;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* 버튼 */
+.MyButton{
+    cursor: pointer;
+    background-color: #e2e2e2;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-family: 'KyoboHand';
+}
+.MyButton_positive{
+    background-color: rgb(222 230 243);
+}
+.MyButton_negative{
+    background-color: rgb(218 205 231);
+}
+
+/* 헤더 */
+header{
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    align-items: center;
+    border-bottom: 1px solid #e2e2e2;
+    font-weight: 900;
+
+}
+header > div{
+    display: flex;
+}
+.head_btn_left{
+    justify-content: start;
+    width: 25%;
+}
+.head_text{
+    width: 50%;
+    justify-content: center;
+    font-size: 25px;
+}
+.head_btn_right{
+    justify-content: end;
+    width: 25%;
+}
