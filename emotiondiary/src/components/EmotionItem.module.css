@@ -1,0 +1,38 @@
+/* EmotionItem */
+.emotionItem{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+    border-radius:50%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.emotionItem_img{
+    width: 43%;
+    margin-bottom: 10px;
+}
+.emotionItem span{
+    font-size: 18px;
+}
+.EmotionItem_1{
+    background: #f19959;
+}
+.EmotionItem_2{
+    background: #f3c65e;
+}
+.EmotionItem_3{
+    background: #ffdfe5;
+}
+.EmotionItem_4{
+    background: #63afa0;
+}
+.EmotionItem_5{
+    background: #e47566;
+}
+.EmotionItem_off{
+    background-color: none;
+}

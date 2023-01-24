@@ -1,0 +1,68 @@
+.InfoDepress{
+
+    /* background-color: aquamarine; */
+}
+.justify_box{
+    margin: 0 auto;
+    margin-top: 50px;
+    width: 80%;
+    justify-content: center;
+}
+.jus_title{
+    font-weight: 900;
+    font-size: 1.5em;
+}
+.jus_content{
+    margin-top: 20px;
+    line-height: 1.7;
+}
+.jus_content span{
+    /* font-style: italic; */
+    font-weight: 900;
+}
+.overcome_box{
+
+    margin: 0 auto;
+    margin-top: 50px;
+    width: 80%;
+}
+.overcome_title{
+    font-weight: 900;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+.overcome_wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.overcome_wrapper li{
+    width: 35%;
+    border: 3px dotted rgb(199 217 247);
+    border-radius: 49px;
+    height: 185px;
+    margin-bottom: 20px;
+}
+.title{
+    font-weight: 800;
+    text-align: center;
+    font-size: 1.25em;
+    margin-top: 10px;
+}
+.box{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 27px;
+    align-items: center;
+}
+.img{
+    width: 27%;
+    height: 60%;
+}
+.content{
+    width: 63%;
+    line-height: 1.5;
+}
+.open_book{
+
+}

@@ -1,0 +1,76 @@
+/* DiaryEditor */
+.DiaryEditor section{
+    margin-bottom: 20px;
+}
+.DiaryEditor .fir_sec{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.DiaryEditor .today_left{
+    display: flex;
+    gap: 10px;
+}
+
+
+.DiaryEditor h4,.DiaryEditor .today_em_title{
+    font-size: 22px;
+    font-weight: bold;
+}
+.DiaryEditor .input_date{
+    border: none;
+    font-size: 17px;
+    font-family: 'KyoboHand';
+    cursor: pointer;
+}
+
+audio::-webkit-media-controls-panel{
+    background-color: white;
+}
+.DiaryEditor .emotion_list_wrapper{
+    display: grid;
+    grid-template-columns: repeat(5,auto);
+    gap: 2%;
+}
+/* new - 세번째 섹션 */
+.DiaryEditor .thi_sec{
+    display: flex;
+    justify-content: space-between;
+}
+.DiaryEditor .img_input{
+    display: none;
+}
+.DiaryEditor .img_label{
+    cursor: pointer;
+}
+.DiaryEditor .text_wrapper{
+    display: flex;
+    flex-direction: column;
+}
+.DiaryEditor .input_img{
+    width: 100%;
+}
+
+.DiaryEditor textarea{
+    font-family: 'KyoboHand';
+    font-size: 20px;
+
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 380px;
+    resize: vertical;
+    /* 가로로는 늘릴 수 없게 */
+    border: none;
+    border-radius: 5px;
+    border: 1px solid #e2e2e2;
+    padding: 20px;
+    margin-bottom: 15px;
+}
+/* 네번째 섹션 */
+.DiaryEditor .for_sec{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 17px;
+}
+

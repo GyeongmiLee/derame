@@ -1,0 +1,33 @@
+.title_wrapper{
+    width: 100%;
+}
+.title{
+    padding-top: 16px;
+    font-size: 1.5em;
+    line-height: 1.5;
+    font-weight: 800;
+    color: #545050;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+}
+.progress{
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 20px;
+    font-weight: 800;
+}
+.bar{
+    width: 90%;
+    margin: 10px auto;
+    height: 2px;
+    background-color: gray;
+    position: relative;
+}
+.bar img{
+    position: absolute;
+    top: -15px;
+    left: 41px;
+    width: 30px;
+    height: 30px;
+}

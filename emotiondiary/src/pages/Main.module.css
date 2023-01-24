@@ -1,0 +1,142 @@
+/** 폰트 **/
+@font-face {
+    font-family: 'ONE-Mobile-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/ONE-Mobile-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+.contents_area{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.Main{
+    font-family: 'ONE-Mobile-Regular';
+}
+/* 배경 */
+.Main{
+    background:white;
+    /* height: 3000px; */
+}
+.color_box {
+    background: linear-gradient(to bottom, rgb(199 217 247), rgb(223, 194, 251), #fff 94%) no-repeat;
+    /* background: linear-gradient(to bottom, rgb(166, 193, 238), rgb(223, 194, 251), #fff 94%) no-repeat; */
+    height: 90%;
+}
+/* FirstSec */
+.FirstSec{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 180px;
+    padding-bottom: 180px;
+    animation: fadeIn 3s linear forwards;
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.FirstSec .main_title{
+    color: #545050;
+}
+.FirstSec #font_med{
+    font-size: 3.5em;
+}
+.FirstSec #font_big{
+    font-weight: 900;
+    font-size: 4em;
+}
+/* SecondSec */
+.SecondSec .ad_wrapper{
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin-bottom: 350px;
+
+}
+.SecondSec .ad_logo{
+    width: 14%;
+}
+.SecondSec .ad_text{
+    font-size: 2em;
+    font-weight: 800;
+    color: #545050;
+}
+.SecondSec .ad_handshape{
+    width: 545px;
+    position: absolute;
+    right: 0%;
+    bottom: -68%;
+    animation: rotate 1s ease-in infinite;
+}
+@keyframes rotate {
+    from {transform: rotate(0deg);
+        animation-timing-function: cubic-bezier(0.25, 0.25, 0.75, 0.75);
+    }
+    to {transform: rotate(3deg);}
+}
+/* ThirdSec */
+.ThirdSec{
+    margin-bottom: 350px;
+    display: flex;
+    justify-content: space-evenly;
+    color: #545050;
+}
+.ThirdSec .left_col{
+    font-size: 2em;
+    font-weight: 800;
+    /* transform: translateX(-200%); */
+}
+.ThirdSec .right_col{
+    font-size: 1.25em;
+}
+.ThirdSec .right_col .bold_txt{
+    font-weight: 800;
+}
+/* fifthSec */
+.FifthSec{
+    margin-top: 300px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.ad_box{
+
+}
+.ad_text{
+    font-size: 1.5em;
+    /* color: rgb(199 217 247); */
+    font-weight: 800;
+    /* font-style: italic; */
+    line-height: 1.25;
+    color: #545050;
+}
+.ad_text_title{
+    font-size: 2em;
+    color: #545050;
+    font-weight: 900;
+    font-style: italic;
+}
+.FifthSec img{
+    border-radius: 13px;
+    height: 345px;
+}
+.Main button{
+    margin-top: 30px;
+    width: 300px;
+    font-family: 'ONE-Mobile-Regular';
+    color: #545050;
+    font-weight: 900;
+}
+.button_box{
+    display: flex;
+    justify-content: center;
+    /* background-color: #dac7fa; */
+    margin-bottom: 300px;
+}

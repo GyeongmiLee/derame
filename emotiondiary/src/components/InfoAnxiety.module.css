@@ -1,0 +1,62 @@
+.InfoAnxiety{
+
+}
+.justify_box{
+    margin: 0 auto;
+    margin-top: 50px;
+    width: 80%;
+    justify-content: center;
+}
+.jus_title{
+    font-weight: 900;
+    font-size: 1.5em;
+}
+.jus_content{
+    margin-top: 20px;
+    line-height: 1.9;
+}
+.jus_content span{
+    font-weight: 900;
+}
+.symptom{
+    width: 80%;
+    margin: 0 auto;
+    line-height: 1.7;
+    margin-top: 10px;
+}
+.overcome_box{
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 60px;
+    width: 80%;
+}
+.overcome_title{
+    font-weight: 900;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+.overcome_wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.overcome_wrapper li{
+    display: flex;
+    flex-direction: column;
+}
+.title{
+    font-weight: 800;
+    text-align: center;
+    font-size: 1.25em;
+    margin-top: 10px;
+    align-self: baseline;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    margin-top: 16px;
+    justify-content: center;
+}
+.content{
+    line-height: 1.9;
+}

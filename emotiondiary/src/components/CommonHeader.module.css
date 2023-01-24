@@ -1,0 +1,164 @@
+/** 폰트 **/
+@font-face {
+    font-family: 'ONE-Mobile-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/ONE-Mobile-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+.CommonHeader{
+    font-family: 'ONE-Mobile-Regular';
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+    background-color: rgb(199 217 247);
+    align-items: center;
+}
+.CommonHeader_fixed{
+    font-family: 'ONE-Mobile-Regular';
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+    background-color: transparent;
+    align-items: center;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+}
+a{text-decoration: none; color: inherit;}
+ul{list-style: none; margin: 0; padding: 0;}
+body{margin: 0;}
+.logo_img{
+    width: 230px;
+    height: 65px;
+    padding: 0 0 0 20px;
+    text-indent: -999999px;
+    cursor: pointer;
+}
+.logo{
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: inherit;
+    overflow: hidden;
+
+}
+/*hd_gnb*/
+.hd_gnb{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+    padding-right: 20px;
+}
+.menu_icon{
+    /* width: 37px; */
+    cursor: pointer;
+    height: 32px;
+}
+.diary{ width: 37px;}
+.location{width: 30px;}
+.info{width:32px;}
+.login{width: 30px;}
+
+.text{
+    display: none;
+}
+.menu_li{
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.menu_li img{
+    /* display: flex;
+    justify-content: center; */
+}
+
+/* 건강정보 menu */
+.menu_li:nth-child(3){
+    position: relative;
+}
+.hd_info_pan{
+    width: 50px;
+    position: absolute;
+    top: 81%;
+    left: 0px;
+    background: transparent;
+    font-size: 13px;
+    text-align: center;
+    display: none;
+}
+
+.pan_menu{
+    padding: 10px 0 10px 0;
+}
+
+/* 반응형헤더 */
+.toggle{
+    display: none;
+    font-size: 1.5rem;
+    padding: 4px;
+    padding-right: 20px;
+}
+/* 화면이 클때만 hover 적용되게 넣어야함 */
+@media screen and (min-width: 780px){
+    .menu_li:hover .text{
+        margin-top: 8px;
+        display: block;
+        font-size: 13px;
+        display: flex;
+        justify-content: center;
+    }
+    #li_3:hover .hd_info_pan{
+        display: block;
+    }
+    .pan_menu:hover{
+        font-weight: bold;
+    }
+}
+
+@media screen and (max-width: 780px){
+    .CommonHeader{
+        flex-wrap: wrap;
+    }
+    .hd_gnb{
+        /* display: none; */
+        flex-direction: column;
+        width: 780px;
+        align-items: center;
+    }
+    .toggle{
+        display: block;
+    }
+    .hd_res{
+        width: 100%;
+        background-color: rgba( 255, 255, 255, 0.5 )
+    }
+    .menu_li{
+        flex-flow: nowrap;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        font-size: 12px;
+        margin-top: 8px;
+        display: block;
+        display: flex;
+    }
+    .text{
+        display: block;
+        flex: none;
+    }
+    .hd_info_pan{
+        width: 50px;
+        position: absolute;
+        top: 81%;
+        left: -6px;
+        background: transparent;
+        font-size: 11px;
+        text-align: center;
+        display: block;
+    }
+}

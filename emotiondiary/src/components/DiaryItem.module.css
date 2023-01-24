@@ -1,0 +1,60 @@
+/* DiaryItem */
+.DiaryItem {
+    padding: 15px 0;
+    border-bottom: 1px solid #e2e2e2;
+}
+.DiaryItem .item_top{
+    display: flex;
+    justify-content: space-between;
+}
+.DiaryItem .emotion_img_wrapper{
+    cursor: pointer;
+    height: 60px;
+    display: flex;
+    /* flex하면 그 안에 맞게 움직임 */
+}
+.DiaryItem .info_wrapper{
+    cursor: pointer;
+    flex-grow: 1;
+    padding-left: 10px;
+}
+.DiaryItem .info_wrapper .diary_date{
+    margin: 0;
+    font-size: 18px;
+    font-weight: 900;
+}
+.DiaryItem .info_wrapper .diary_day{
+    margin: 0;
+    font-size: 18px;
+    font-weight: 900;
+    color: gray;
+    padding-bottom: 10px;
+}
+.DiaryItem .btn_wrapper{
+    display: flex;
+    justify-content: end;
+    min-width: 120px;
+    height: 60px;
+}
+.DiaryItem .btn_wrapper img{
+    width: 22px;
+    height: 22px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+.DiaryItem .btn_name{
+    cursor: pointer;
+}
+.DiaryItem .item_bottom{
+    padding-top: 10px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+.DiaryItem .item_bottom img{
+    width: 100%;
+    border-radius: 30px;
+    margin-bottom: 16px;
+    margin-top: 16px;
+}
+
+

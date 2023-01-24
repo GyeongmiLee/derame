@@ -1,0 +1,29 @@
+/* DiaryList */
+.DiaryList .menu_wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.DiaryList h3{
+    display: inline-block;
+    font-size: 18px;
+}
+.DiaryList .right_col{
+    display: inline-block;
+    display: flex;
+}
+.DiaryList .ControlMenu{
+    margin-right: 10px;
+    border: none;
+    border: 2px solid #e2e2e2;
+    padding: 5px 15px;
+    cursor: pointer;
+    font-family: 'KyoboHand';
+    font-size: 18px;
+    border-radius: 5px;
+}
+.DiaryList .right_col button{
+    padding: 5px 15px;
+    cursor: pointer;
+    font-weight: bold;
+}

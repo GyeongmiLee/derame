@@ -1,0 +1,79 @@
+@font-face {
+    font-family: 'KyoboHand';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@1.0/KyoboHand.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+.CommonDiary{
+    font-family: 'KyoboHand';
+    background-color: rgb(222 230 243);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+} 
+.Diary_wrapper{
+    background-color: white;
+    box-shadow: rgba(100,100,111,0.2) 0px 7px 29px 0px;
+    border-radius: 25px;
+    min-height: 100vh;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+/* 650 이상일때는 640으로 고정 */
+@media (min-width: 650px){
+    .Diary_wrapper{
+        width: 640px;
+    }
+}
+/* 650 이하일때는 화면기준 90% */
+@media (max-width: 650px){
+    .Diary_wrapper{
+        width: 90vw;
+    }
+}
+
+/* Diary */
+.Diary img {
+    width: 22px;
+    padding-top: 5px;
+    cursor: pointer;
+}
+
+.Diary .diary_title_wrapper{
+    display: flex;
+    height: 50px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 21px;
+    font-size: 22px;
+}
+.Diary .diary_title_wrapper img{
+    width: 8%;
+}
+.Diary .diary_content_wrapper{
+    margin: 10px;
+    border-radius: 25px;
+    box-sizing: border-box;
+    border:1px solid #ececec;
+}
+.Diary .diary_content_wrapper h4{
+    margin: 0;
+    padding: 10px;
+    font-size: 22px;
+}
+.Diary .diary_content_wrapper img{
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.Diary .diary_content_wrapper div{
+    padding: 10px;
+    font-size: 20px;
+    word-break: keep-all;
+    overflow-wrap: break-word;
+    font-weight: 400;
+    line-height: 2.5;
+    text-align: left;
+}

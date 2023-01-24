@@ -1,0 +1,46 @@
+/* 폰트 */
+@font-face {
+    font-family: 'KyoboHand';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@1.0/KyoboHand.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'ONE-Mobile-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/ONE-Mobile-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+.CommonDiary{
+    font-family: 'KyoboHand';
+    background: linear-gradient(to bottom, rgb(199 217 247), rgb(223, 194, 251), #fff 94%) no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+} 
+
+.Diary_wrapper{
+    background-color: white;
+    box-shadow: rgba(100,100,111,0.2) 0px 7px 29px 0px;
+    border-radius: 25px;
+    min-height: 100vh;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+/* 650 이상일때는 640으로 고정 */
+@media (min-width: 650px){
+    .Diary_wrapper{
+        width: 640px;
+    }
+}
+/* 650 이하일때는 화면기준 90% */
+@media (max-width: 650px){
+    .Diary_wrapper{
+        width: 90vw;
+    }
+}
+
+
+
