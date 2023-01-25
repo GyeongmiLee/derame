@@ -18,7 +18,7 @@ const DiaryItem = ({ id, emotion, content, date, img }) => {
   const goRemove = () => {
     if (window.confirm("정말 삭제하시겠습니까?")) {
       onRemove(id);
-      navigate("/home", { replace: true });
+      navigate(0, { replace: true });
     }
   };
 

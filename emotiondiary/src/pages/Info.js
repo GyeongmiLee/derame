@@ -5,6 +5,7 @@ import InfoDepress from "../components/InfoDepress";
 import InfoStress from "../components/InfoStress";
 import { useParams, Link, useNavigate } from "react-router-dom";
 import { scrollToTop } from "../App";
+import Footer from "../components/Footer";
 
 const Info = () => {
   //params
@@ -54,6 +55,7 @@ const Info = () => {
         {/* 지금 선택된 activeTab */}
         {obj[+id]}
       </div>
+      <Footer />
     </div>
   );
 };

@@ -13,6 +13,8 @@
     padding-top: 10px;
     background-color: rgb(199 217 247);
     align-items: center;
+    position: relative;
+    z-index: 999;
 }
 .CommonHeader_fixed{
     font-family: 'ONE-Mobile-Regular';
@@ -52,7 +54,6 @@ body{margin: 0;}
     padding-right: 20px;
 }
 .menu_icon{
-    /* width: 37px; */
     cursor: pointer;
     height: 32px;
 }
@@ -72,11 +73,6 @@ body{margin: 0;}
     flex-wrap: wrap;
     justify-content: center;
 }
-.menu_li img{
-    /* display: flex;
-    justify-content: center; */
-}
-
 /* 건강정보 menu */
 .menu_li:nth-child(3){
     position: relative;
@@ -98,13 +94,12 @@ body{margin: 0;}
 
 /* 반응형헤더 */
 .toggle{
-    display: none;
     font-size: 1.5rem;
     padding: 4px;
     padding-right: 20px;
 }
 /* 화면이 클때만 hover 적용되게 넣어야함 */
-@media screen and (min-width: 780px){
+@media screen and (min-width: 600px){
     .menu_li:hover .text{
         margin-top: 8px;
         display: block;
@@ -120,45 +115,137 @@ body{margin: 0;}
     }
 }
 
-@media screen and (max-width: 780px){
+@media screen and (max-width: 600px){
     .CommonHeader{
         flex-wrap: wrap;
+        align-items: center;
+        display: block;
+        
     }
     .hd_gnb{
-        /* display: none; */
-        flex-direction: column;
-        width: 780px;
-        align-items: center;
+    flex-direction: column;
+    width: 156px;
+    align-items: center;
+    padding-right: 0;
+    }
+    .img_box{
+        display: flex;
+        width: 37px;
+        justify-content: center;
     }
     .toggle{
         display: block;
+        background: rgba(255,255,255, 50%);
+        padding-left: 10px;
+        box-sizing: border-box;
+        border-radius: 25px 0 0 25px;
+        position: absolute;
+        right: 0;
+        top: 0;
     }
-    .hd_res{
-        width: 100%;
-        background-color: rgba( 255, 255, 255, 0.5 )
+    .icon{
+        float: right;
+        padding-top: 7px;
+        padding-left: 7px;
+        padding-bottom: 7px;
+        cursor: pointer;
     }
     .menu_li{
-        flex-flow: nowrap;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        font-size: 12px;
-        margin-top: 8px;
-        display: block;
-        display: flex;
+      flex-flow: nowrap;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 14px;
+    margin-top: 8px;
+    gap: 8px;
+    width: 156px;
+    justify-content: flex-start;
+    
     }
     .text{
         display: block;
         flex: none;
     }
     .hd_info_pan{
-        width: 50px;
-        position: absolute;
-        top: 81%;
-        left: -6px;
+        width: 100%;
+        position: static;
         background: transparent;
-        font-size: 11px;
+        font-size: 13px;
         text-align: center;
         display: block;
+        display: flex;
+        gap: 8px;
+        justify-content: flex-start;
+    }
+    .pan_menu{
+        padding: 0;
+    }
+    .CommonHeader_fixed{
+        flex-wrap: wrap;
+        align-items: center;
+        display: block;
+
+    }
+    .CommonHeader_fixed .hd_gnb{
+        flex-direction: column;
+        width: 156px;
+        align-items: center;
+        padding-right: 0;
+    }
+    .CommonHeader_fixed .img_box{
+        display: flex;
+        width: 37px;
+        justify-content: center;
+    }
+    .CommonHeader_fixed .toggle{
+        float: right;
+        display: block;
+        background: rgba(255,255,255, 50%);
+        padding-left: 10px;
+        box-sizing: border-box;
+        border-radius: 25px 0 0 25px;
+        transition: .5s linear;
+    }
+    .CommonHeader_fixed .icon{
+        float: right;
+        padding-top: 7px;
+        padding-left: 7px;
+        padding-bottom: 7px;
+    }
+    .CommonHeader_fixed .menu_li{
+      flex-flow: nowrap;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 14px;
+    margin-top: 8px;
+    gap: 8px;
+    width: 156px;
+    justify-content: flex-start;    
+    }
+    .CommonHeader_fixed .text{
+        display: block;
+        flex: none;
+    }
+    .CommonHeader_fixed .hd_info_pan{
+        width: 100%;
+        position: static;
+        background: transparent;
+        font-size: 13px;
+        text-align: center;
+        display: block;
+        display: flex;
+        gap: 8px;
+        justify-content: flex-start;
+    }
+    .CommonHeader_fixed .pan_menu{
+        padding: 0;
+    }
+}
+@media screen and (max-width: 410px){
+    .logo_img{
+        width: 200px;
+        height: 60px;
+        padding: 0 0 0 10px;
     }
 }

@@ -1,9 +1,6 @@
-.InfoStress{
-
-}
 .justify_box{
     margin: 0 auto;
-    margin-top: 50px;
+    margin-top: 100px;
     width: 80%;
     justify-content: center;
 }
@@ -12,8 +9,10 @@
     font-size: 1.5em;
 }
 .jus_content{
-    margin-top: 20px;
+    margin-top: 30px;
     line-height: 1.7;
+    font-size: 0.92em;
+
 }
 .jus_content span{
     font-weight: 900;
@@ -21,23 +20,24 @@
 .stress_wrapper{
     width: 100%;
     background-color: #ececec;
-    padding: 18px;
+    padding: 28px;
     box-sizing: border-box;
     display: flex;
     justify-content: space-evenly;
     border-radius: 25px;
-    margin-top: 16px;
+    margin-top: 30px;
+    font-size: 0.92em;
 }
 .img_box{
     display: flex;
     border-radius: 25px;
     justify-content: center;
-    width: 34%;
-    gap: 16px;
+    width: 38%;
+    gap: 41px;
     align-items: center;
 }
 .img_box img{
-    width: 42%;
+    width: 32%;
 }
 .txt_title{
     font-weight: 800;
@@ -46,10 +46,11 @@
 }
 .txt_contents{
     line-height: 1.25;
+    
 }
 .overcome_box{
     margin: 0 auto;
-    margin-top: 50px;
+    margin-top: 80px;
     margin-bottom: 60px;
     width: 80%;
 }
@@ -66,6 +67,7 @@
 .overcome_wrapper li{
     display: flex;
     flex-direction: column;
+    margin-top: 14px;
 }
 .title{
     font-weight: 800;
@@ -81,5 +83,48 @@
     justify-content: center;
 }
 .content{
-    line-height: 1.7;
+    line-height: 2;
+    font-size: 0.92em;
+
+}
+/* 반응형 */
+@media screen and (max-width: 780px){
+    .img_box{
+        width: 45%;
+        gap: 26px;
+    }
+    .img_box img{
+        width: 40%;
+    }
+}
+@media screen and (max-width: 660px){
+    .stress_wrapper{
+        gap: 30px;
+    }
+    .img_box{
+        width: 50%;
+        gap: 17px;
+    }
+    .img_box img{
+        width: 30%;
+    }
+}
+@media screen and (max-width: 545px){
+    .stress_wrapper{
+        font-size: 0.82em;
+    }
+}
+@media screen and (max-width: 506px){
+    .stress_wrapper{
+        padding: 13px 16px;
+        gap: 35px;
+        flex-wrap: wrap;
+    }
+    .img_box{
+        width: 84%;
+    }
+    .title{
+        text-align: start;
+        font-size: 1.1em;
+    }
 }

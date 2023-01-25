@@ -14,11 +14,9 @@ const New = () => {
 
   return (
     <div className={styles.CommonDiary}>
-      {/* <div className={styles.CommonDiary}> */}
       <div className={styles.Diary_wrapper}>
         <DiaryEditor />
       </div>
-      {/* </div> */}
     </div>
   );
 };

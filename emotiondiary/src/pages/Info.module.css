@@ -1,5 +1,4 @@
 .Info{
-    /* background-color: gray; */
     margin-top: 100px;
     font-family: 'ONE-Mobile-Regular';
     color: #545050;
@@ -20,7 +19,6 @@
 .tabs li{
     font-size: 1.25em;
     font-weight: 900;
-    /* width: calc(100% / 3); */
     text-align: center;
     border-right: 2px solid rgb(161, 161, 161);
     cursor: pointer;
@@ -33,14 +31,12 @@
     display: inline-block;
 }
 .hover{
-    /* border-bottom: 0 solid rgb(199 217 247); */
     margin-top: 5px;
     width: 0%;
     transition: linear .2s;
     background-color: rgb(199 217 247);
 }
 .tabs li:hover .hover{
-    /* border-bottom: 5px solid rgb(199 217 247); */
     width: 100%;
     height: 5px;
     background-color: rgb(199 217 247);

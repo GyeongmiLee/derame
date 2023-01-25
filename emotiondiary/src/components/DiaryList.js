@@ -68,8 +68,7 @@ const DiaryList = ({ diaryList }) => {
   return (
     <div className={styles.DiaryList}>
       <div className={styles.menu_wrapper}>
-        {/* 여기부터 다시~ */}
-        <h3>{`나의 기록 ${diaryList.length}개`}</h3>
+        <h3>{`기록 ${diaryList.length}개`}</h3>
         <div className={styles.right_col}>
           <ControlMenu
             value={sortType}
@@ -90,10 +89,6 @@ const DiaryList = ({ diaryList }) => {
       </div>
       {/* 랜더될때마다 바뀌는 content */}
       {getProcessDiaryList().map((it) => (
-        // <div key={it.id}>
-        //   {it.content}
-        //   {it.emotion}
-        // </div>
         <DiaryItem key={it.id} {...it} />
       ))}
     </div>

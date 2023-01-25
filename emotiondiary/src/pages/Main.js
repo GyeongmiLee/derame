@@ -56,8 +56,8 @@ const Main = () => {
             />
             <div className={styles.ad_text}>{text}</div>
             <img
-              src={process.env.PUBLIC_URL + `/assets/handshpae.png`}
-              alt="main_logo"
+              src={process.env.PUBLIC_URL + `/assets/handshapetwo.png`}
+              alt="hand_shape"
               className={styles.ad_handshape}
             />
           </div>
@@ -78,6 +78,13 @@ const Main = () => {
             </div>
           </div>
         </section>
+        <div className={styles.button_box}>
+          <MyButton
+            type={"negative"}
+            text={"건강정보 보러가기"}
+            onClick={() => navigate("/info/0")}
+          />
+        </div>
         <MainTab />
         <section className={`${styles.FifthSec} ${styles.contents_area}`}>
           <div className={styles.ad_box} data-aos="fade-right">

@@ -74,3 +74,18 @@ audio::-webkit-media-controls-panel{
     margin-bottom: 17px;
 }
 
+/* 반응형 */
+@media screen and (max-width: 620px){
+    .DiaryEditor .fir_sec{
+        display: block;
+    }
+    .today_right{
+        position: relative;
+        top: -16px;
+        left: -16px;
+    }
+    .DiaryEditor h4,.DiaryEditor .today_em_title{
+        font-size: 19px;
+        font-weight: bold;
+    }
+}

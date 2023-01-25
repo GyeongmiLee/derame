@@ -1,4 +1,7 @@
 /* 버튼 */
+body{
+    overflow-x: hidden;
+}
 .MyButton{
     cursor: pointer;
     background-color: #e2e2e2;
@@ -58,5 +61,10 @@ header > div{
         padding: 15px;
         z-index: 999999;
         transition: linear 2s;
-        /* display: none; */
+}
+/*헤더 반응형*/
+@media screen and (max-width: 550px){
+    .head_text{
+        font-size: 20px;
+    }
 }

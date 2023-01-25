@@ -72,19 +72,17 @@ const Home = () => {
 
   return (
     <div className={styles.CommonDiary}>
-      <div className="Home">
-        <div className={styles.Diary_wrapper}>
-          <MyHeader
-            leftChildren={
-              <MyButton text={"<"} onClick={decreaseMonth} type={"white"} />
-            }
-            headerText={headerText}
-            rightChildren={
-              <MyButton text={">"} onClick={increaseMonth} type={"white"} />
-            }
-          />
-          <DiaryList diaryList={data} />
-        </div>
+      <div className={styles.Diary_wrapper}>
+        <MyHeader
+          leftChildren={
+            <MyButton text={"<"} onClick={decreaseMonth} type={"white"} />
+          }
+          headerText={headerText}
+          rightChildren={
+            <MyButton text={">"} onClick={increaseMonth} type={"white"} />
+          }
+        />
+        <DiaryList diaryList={data} />
       </div>
     </div>
   );

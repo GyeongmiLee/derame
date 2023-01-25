@@ -36,3 +36,8 @@
 .EmotionItem_off{
     background-color: none;
 }
+@media screen and (max-width: 620px){
+    .emotionItem{
+        border-radius:25px;
+    }
+}

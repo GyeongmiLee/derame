@@ -5,7 +5,6 @@ import MyButton from "../components/MyButton";
 import MyHeader from "../components/MyHeader";
 import { strDate, strDay, strYear } from "../util/kor_date";
 import { emotionList } from "../util/emotion";
-// import styles from "./CommonDiary.module.css";
 import styles from "./Diary.module.css";
 import { scrollToTop } from "../App";
 
@@ -58,9 +57,9 @@ const Diary = () => {
                   onClick={() => navigate(-1)}
                 />
               }
-              headerText={`${strYear(new Date(data.date))} ${strDate(
+              headerText={`${strDate(new Date(data.date))} ${strDay(
                 new Date(data.date)
-              )} ${strDay(new Date(data.date))}요일`}
+              )}요일`}
               rightChildren={
                 <img
                   src={process.env.PUBLIC_URL + `/assets/check.png`}

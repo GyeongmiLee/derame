@@ -53,36 +53,36 @@ export const DiaryStateContext = React.createContext();
 export const DiaryDispatchContext = React.createContext();
 
 // dummydata
-const dummydata = [
-  {
-    id: 1,
-    emotion: 4,
-    content:
-      "예시용 내용입니다, 일기를 작성하면 이런식으로 데이터가 들어갑니다!",
-    date: 1670001834001,
-  },
-  {
-    id: 2,
-    emotion: 2,
-    content:
-      "예시용 내용입니다, 일기를 작성하면 이런식으로 데이터가 들어갑니다!",
-    date: 1673606261904,
-  },
-  {
-    id: 3,
-    emotion: 1,
-    content:
-      "예시용 내용입니다, 사진을 넣으면 이런식으로 데이터가 들어갑니다. 고양이 귀엽죠(●'◡'●)",
-    date: 1672680234000,
-    img: `${process.env.PUBLIC_URL}/assets/cat.png`,
-  },
-];
+// const dummydata = [
+//   {
+//     id: 1,
+//     emotion: 4,
+//     content:
+//       "예시용 내용입니다, 일기를 작성하면 이런식으로 데이터가 들어갑니다!",
+//     date: 1670001834001,
+//   },
+//   {
+//     id: 2,
+//     emotion: 2,
+//     content:
+//       "예시용 내용입니다, 일기를 작성하면 이런식으로 데이터가 들어갑니다!",
+//     date: 1673606261904,
+//   },
+//   {
+//     id: 3,
+//     emotion: 1,
+//     content:
+//       "예시용 내용입니다, 사진을 넣으면 이런식으로 데이터가 들어갑니다. 고양이 귀엽죠(●'◡'●)",
+//     date: 1672680234000,
+//     img: `${process.env.PUBLIC_URL}/assets/cat.png`,
+//   },
+// ];
 
 function App() {
   // useReducer(데이터 관리)
-  const [data, dispatch] = useReducer(reducer, dummydata);
+  const [data, dispatch] = useReducer(reducer, []);
   // id 자동으로 올라가게 만들려면
-  const dataId = useRef(4); //초기값 0 넣어주기
+  const dataId = useRef(0); //초기값 0 넣어주기
   //dom 요소에 접근 - useRef 사용!
   const [showButton, setShowButton] = useState(false);
   const handleShowButton = () => {

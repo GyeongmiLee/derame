@@ -1,10 +1,4 @@
-import React, {
-  useEffect,
-  useState,
-  useMemo,
-  useRef,
-  useCallback,
-} from "react";
+import React, { useState, useMemo, useRef } from "react";
 import styles from "./MainTab.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {

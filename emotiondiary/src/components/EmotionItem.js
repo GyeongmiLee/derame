@@ -11,8 +11,6 @@ const EmotionItem = ({
   return (
     <div
       onClick={() => onClick(emotion_id)}
-      //className={`${styles['form-control']} ${!isValid && styles.invalid} `}
-      //className={[styles.menu_pan,header === 1 ? styles.pan_active : ""].join(" ")}
       className={[
         styles.emotionItem,
         isSelected

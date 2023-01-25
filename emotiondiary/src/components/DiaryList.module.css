@@ -27,3 +27,75 @@
     cursor: pointer;
     font-weight: bold;
 }
+/* 620 - home*/
+@media screen and (max-width: 597px){
+    .Diary_wrapper{
+        width: 80vw;
+    }
+    .DiaryList .ControlMenu{
+        width: 25%;
+        font-size: 16px;
+    }
+    .DiaryList .right_col{
+        display: flex;
+        justify-content: flex-end;
+    }
+    .DiaryList h3{
+        font-size: 16px;
+    }
+    .DiaryList .right_col button{
+        font-size: 16px;
+    }
+}
+@media screen and (max-width: 544px){
+
+    .Diary_wrapper{
+        width: 80vw;
+    }
+    .DiaryList .ControlMenu{
+        width: 25%;
+        padding: 5px 7px;
+        font-size: 16px;
+    }
+
+    .DiaryList h3{
+        font-size: 13px;
+    }
+
+}
+@media screen and (max-width: 480px){
+
+    .DiaryList .ControlMenu{
+        width: 25%;
+        padding: 5px 7px;
+        font-size: 16px;
+    }
+
+    .DiaryList .ControlMenu{
+        width: 25%;
+        padding: 3px 3px;
+        font-size: 12px;
+    }
+    .DiaryList .right_col button{
+        font-size: 13px;
+    }
+
+    .DiaryList .right_col button{
+        padding: 5px 6px;
+        cursor: pointer;
+        font-weight: bold;
+    }
+    .DiaryList .ControlMenu{
+        margin-right: 5px;
+    }
+}
+@media screen and (max-width: 345px){
+
+    .DiaryList h3{
+        display: none;
+    }
+    .DiaryList .menu_wrapper{
+        justify-content: flex-end;
+    }
+
+}

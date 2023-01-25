@@ -1,6 +1,4 @@
-import React, { useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-// import styles from "./Swiperslide.module.css";
 import "swiper/css";
 import "swiper/css/effect-cards";
 import "./styles.css";
@@ -12,17 +10,13 @@ const Swiperslide = () => {
 
   return (
     <div className="Swiperslide">
-      {/* className={styles.Swiperslide} */}
       <div className="slide_title">
-        {/* className={styles.slide_title} */}
         내 마음에 필요한
         <br />
         깊고 복잡한 문제, 자세히 들여다봐요
       </div>
       <div id="wrap">
-        {/* id={styles.wrap} */}
         <div id="wrap_app">
-          {/* id={styles.wrap_app} */}
           <Swiper
             effect={"cards"}
             grabCursor={true}
@@ -31,7 +25,6 @@ const Swiperslide = () => {
           >
             <SwiperSlide>
               <img
-                // process.env.PUBLIC_URL + `/assets/main_logo.png`
                 src={process.env.PUBLIC_URL + "/assets/stress.png"}
                 alt="스트레스"
                 onClick={() => navigate("/info/1")}

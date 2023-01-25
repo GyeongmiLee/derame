@@ -18,7 +18,6 @@
 }
 .col_title{
     font-size: 2em;
-    /* color: #545050; */
     font-weight: 800;
     position: relative;
 }
@@ -31,8 +30,6 @@
 }
 .right_col{
     width: 50%;
-    /* display: flex; */
-    /* justify-content: ; */
 }
 .col_sec_wrapper p{
     width: 209px;
@@ -43,7 +40,6 @@
     text-align: center;
     line-height: 45px;
     font-size: 15px;
-    /* color: #545050; */
     font-weight: 600;
     cursor: pointer;
 }
@@ -52,6 +48,7 @@
 .phone_img{
     height: inherit;
     width: 324px;
+    min-width: 324px;
     background-color: white;
     border: 9px solid #ccc;
     border-radius: 65px;
@@ -70,8 +67,6 @@
 }
 /* 핸드폰 안 contents*/
 .contents_wrapper{
-    /* position: absolute;
-    top: 0; */
     width: 100%;
     height: 100%;
     display: flex;
@@ -89,10 +84,6 @@
     border-radius: 4px;
 }
 .phone_top{
-    /* position: absolute;
-    top: 18px;
-    left: 50%; */
-    /* transform: translate(-50%, -50%); */
     width: 138px;
     height: 25px;
     border-radius: 25px;
@@ -102,10 +93,6 @@
     align-items: center;
 }
 .phone_mid{
-    /* position: absolute;
-    top: 17px;
-    left: 50%;
-    transform: translate(-50%, -50%); */
     width: 46px;
     height: 5px;
     border-radius: 25px;
@@ -116,34 +103,21 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    /* display: none; */
 }
 .contents_wrapper_1 .phone_title{
     padding-top: 16px;
     font-size: 1.5em;
     line-height: 1.5;
     font-weight: 800;
-    /* color: #545050; */
     box-sizing: border-box;
-    /* position: absolute;
-    left: 50%;
-    transform: translate(-50%); */
 }
 .contents_wrapper_1 iframe{
-    /* position: absolute;
-    top: 13%;
-    left: 50%;
-    transform: translate(-50%); */
     border-radius: 16px;
 }
 .contents_wrapper_1 .script_wrapper{
     border: 2px solid gray;
 }
 .contents_wrapper_1 .script{
-    /* position: absolute;
-    left: 50%;
-    transform: translate(-50%);
-    top: 56%; */
     width: 270px;
     height: 45px;
     background-color: rgb(199 217 247);
@@ -152,7 +126,6 @@
     text-align: center;
     line-height: 45px;
     font-size: 15px;
-    /* color: #545050; */
     font-weight: 600;
     display: flex;
     gap: 10px;
@@ -161,10 +134,6 @@
     margin-top: 20px;
 }
 .contents_wrapper_1 .script img{
-    /* position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    left: 9px; */
     width: 32px;
 }
 .contents_wrapper_1 .script_title{
@@ -173,13 +142,9 @@
 .contents_wrapper_1 .script_content{
     display: block;
     width: 270px;
-    /* position: absolute;
-    top: 63%;
-    left: 50%;
-    transform: translate(-50%); */
     border: 2px solid rgb(199 217 247);
     border-radius: 14px;
-    padding: 10px;
+    padding: 20px;
     box-sizing: border-box;
     font-size: 14px;
     line-height: 1.2;
@@ -187,18 +152,17 @@
 .contents_wrapper_1 .toggle svg{
     width: 28px;
     height: 17px;
+    cursor: pointer;
 }
 .contents_wrapper_1 .script_outer{
     padding: 20px 0;
     width: 80%;
     line-height: 1.3;
     font-size: 16px;
-    /* color: #545050; */
 }
 /* 두번째 화면 2(1) */
 .contents_wrapper_2_1{
     width: 100%;
-    /* height: 100%; */
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -258,7 +222,6 @@
 /* 세번째 화면 2(2) */
 .contents_wrapper_2_2{
     width: 100%;
-    /* height: 100%; */
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -266,7 +229,6 @@
 }
 .contents_wrapper_2_2 svg{
     position: relative;
-    /* bottom: 0; */
     bottom: 39px;
     left: 230px;
     cursor: pointer;
@@ -282,8 +244,6 @@
     padding-top: 10px;
     width: 80%;
     line-height: 1.25;
-    /* color: #545050; */
-
 }
 .done_list{
     margin-top: 20px;
@@ -294,12 +254,10 @@
 }
 .done_list p{
     font-size: 16px;
-    /* color: #545050; */
     padding: 7px;
 }
 .done_list div{
     color: rgb(192, 100, 100);
-    /* transform: translate(20px, 10px); */
     transform: rotate(-23deg);
     font-size: 23px;
     font-weight: 800;
@@ -310,12 +268,10 @@
     padding-top: 10px;
     width: 80%;
     line-height: 1.7;
-    /* color: #545050; */
 }
 .thanks_diary{
     margin-top: 20px;
     width: 80%;
-    /* height: 200px; */
     background-color: #ccc;
     border-radius: 25px;
     display: flex;
@@ -354,7 +310,6 @@
 /* 네번째 화면 2(3)*/
 .contents_wrapper_2_3{
     width: 100%;
-    /* height: 100%; */
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -362,7 +317,6 @@
 }
 .contents_wrapper_2_3 svg{
     position: relative;
-    /* bottom: 0; */
     bottom: 39px;
     left: 230px;
     cursor: pointer;
@@ -405,3 +359,43 @@
     line-height: 1.7;
 }
 
+/* 반응형 */
+@media screen and (max-width: 850px){
+    .col_title{
+        font-size: 1.5em;
+    }
+}
+@media screen and (max-width: 800px){
+    .FourthSec{
+        display: block;
+    }
+    .left_col{
+        width: 100%;
+    }
+    .right_col{
+        margin: 35px auto;
+    }
+}
+@media screen and (max-width: 608px){
+    .col_title{
+        font-size: 1.25em;
+    }
+    .col_title img{
+        width: 23px;
+    }
+    .col_sec_wrapper p{
+        width: 165px;
+        font-size: 13px;
+    }
+
+}
+@media screen and (max-width: 410px){
+    .col_title{
+        font-size: 1em;
+    }
+    .col_sec_wrapper p{
+        width: 150px;
+        font-size: 11px;
+        height: 40px;
+    }
+}
