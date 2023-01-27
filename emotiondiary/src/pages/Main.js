@@ -13,6 +13,8 @@ const Main = () => {
   // 화면 로딩하면 한번만 실행되게
   useEffect(() => {
     scrollToTop();
+    const titleElement = document.getElementsByTagName("title")[0];
+    titleElement.innerHTML = `dearme - main`;
   }, []);
   //타이핑
   const txt = "나의 마음을 위한 앱, 디어미";
@@ -37,7 +39,6 @@ const Main = () => {
       <div className={styles.color_box}>
         <section
           className={`${styles.FirstSec} ${styles.contents_area}`}
-          // translatd3d(0,50%,0)
           style={{ opacity: 0 }}
         >
           <div className={styles.main_title} id={styles.font_med}>

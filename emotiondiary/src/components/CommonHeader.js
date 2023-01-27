@@ -67,11 +67,11 @@ const CommonHeader = () => {
           }}
         >
           <FontAwesomeIcon
-            icon={isToggled ? faBars : faTimes}
+            icon={!isToggled ? faBars : faTimes}
             className={styles.icon}
           />
           <div
-            style={!isToggled ? { display: "block" } : { display: "none" }}
+            style={!isToggled ? { display: "none" } : { display: "block" }}
             className={styles.ham_box}
           >
             <HeaderComponent />

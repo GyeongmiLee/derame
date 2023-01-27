@@ -9,7 +9,7 @@ const New = () => {
   useEffect(() => {
     scrollToTop();
     const titleElement = document.getElementsByTagName("title")[0];
-    titleElement.innerHTML = `감정일기장 - 새 일기 작성`;
+    titleElement.innerHTML = `dearme, - 새 일기 작성`;
   }, []);
 
   return (

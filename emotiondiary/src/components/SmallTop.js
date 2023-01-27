@@ -9,6 +9,7 @@ const SmallTop = ({ pageId }) => {
         <img
           src={process.env.PUBLIC_URL + `/assets/percent.png`}
           className="bar_img"
+          alt="percent"
         />
       </div>
     </div>

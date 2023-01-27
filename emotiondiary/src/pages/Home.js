@@ -47,7 +47,7 @@ const Home = () => {
   //타이틀 바꿔주기
   useEffect(() => {
     const titleElement = document.getElementsByTagName("title")[0];
-    titleElement.innerHTML = `감정일기장`;
+    titleElement.innerHTML = `dearme - 마음일기`;
   }, []);
 
   // 버튼 클릭시 이벤트

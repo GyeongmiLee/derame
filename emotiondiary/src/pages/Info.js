@@ -22,6 +22,8 @@ const Info = () => {
 
   useEffect(() => {
     scrollToTop();
+    const titleElement = document.getElementsByTagName("title")[0];
+    titleElement.innerHTML = `dearme - 건강정보`;
   }, []);
 
   // 페이지 객체로 만들어주기

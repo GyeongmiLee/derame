@@ -7,6 +7,7 @@
 }
 .contents_area{
     width: 100%;
+    max-width: 1200px;
     margin: 0 auto;
 }
 .Main{
@@ -225,7 +226,7 @@
     }
 
 }
-@media screen and (max-width: 410px){
+@media screen and (max-width: 480px){
     
     .FirstSec #font_med{
         font-size: 1.25em;
@@ -238,28 +239,35 @@
         font-weight: 800;
         color: #545050;
     }
+    .ThirdSec{
+        flex-wrap: wrap;
+        text-align: center;
+    }
     .ThirdSec .left_col{
-        font-size: 1em;
+        font-size: 1.3em;
     }
     .ThirdSec .right_col{
-        font-size: 0.6em;
+        font-size: 1.1em;
     }
     .FifthSec img{
         height: 230px;
     }
     .Main button{
-        width: 150px;
-        font-size: 0.6em;
+        font-size: 0.9em;
     }
     /* fifth */
+    .FifthSec{
+        flex-wrap: wrap;
+    }
     .ad_text{
-        font-size: 0.8em;
+        font-size: 1.3em;
     }
     .ad_text_title{
         font-size: 1em;
     }
     .FifthSec img{
-        height: 150px;
+        height: 230px;
+        width: 80%;
     }
 
 }

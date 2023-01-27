@@ -1,7 +1,8 @@
 .contents_area{
     width: 100%;
-    width: 1150px;
+    max-width: 1150px;
     margin: 0 auto;
+    overflow: hidden;
 }
 .Footer{
     border-top: 2px solid #e2e2e2;
@@ -58,19 +59,19 @@
 
 @media screen and (max-width: 850px){
     .contents_area{
-        width: 1030px;
+        max-width: 1030px;
     }
 
 }
 @media screen and (max-width: 760px){
     .contents_area{
-        width: 980px;
+        max-width: 980px;
     }
 
 }
 @media screen and (max-width: 719px){
     .contents_area{
-        width: 914px;
+        max-width: 914px;
     }
 }
 @media screen and (max-width: 626px){

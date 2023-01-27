@@ -3,8 +3,6 @@ import styles from "./InfoDepress.module.css";
 import { overcome } from "../util/Infolist";
 
 const InfoDepress = () => {
-  const { id } = useParams();
-
   return (
     <div className={styles.InfoDepress}>
       <div className={styles.justify_box}>

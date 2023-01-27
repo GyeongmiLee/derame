@@ -26,8 +26,11 @@ const Center = () => {
     setCenterData(locations);
   };
   useEffect(() => {
-    scrollToTop();
     getData();
+    //타이틀 바꿔주기
+    const titleElement = document.getElementsByTagName("title")[0];
+    titleElement.innerHTML = `dearme - center`;
+    scrollToTop();
   }, []);
 
   return (
@@ -35,6 +38,7 @@ const Center = () => {
       <img
         src={process.env.PUBLIC_URL + `/assets/center_detail.png`}
         className={styles.center_info}
+        alt="center_detail"
       />
       <Map // 지도를 표시할 Container
         id={`map`}
@@ -75,6 +79,7 @@ const Center = () => {
                             src={process.env.PUBLIC_URL + `/assets/x.png`}
                             onClick={() => setIsOpen(false)}
                             title="닫기"
+                            alt="x"
                           />
                         </div>
                         <div className={styles.body}>
