@@ -21,12 +21,17 @@
     font-weight: 800;
     position: relative;
 }
-/* 구름이미지 */
+/* clickme 이미지 */
 .col_title img{
     position: absolute;
     bottom: 20%;
     left: 91%;
-    width: 40px;
+    width: 55%;
+    animation: motion 0.3s linear infinite alternate;
+}
+@keyframes motion {
+    from {margin-bottom: 0;}
+    to {margin-bottom: 8px;}
 }
 .right_col{
     width: 50%;
@@ -383,7 +388,7 @@
         font-size: 1.25em;
     }
     .col_title img{
-        width: 23px;
+        width: 55%;
     }
     .col_sec_wrapper p{
         /* width: 165px; */

@@ -64,11 +64,12 @@ const MainTab = () => {
             <p>나의 하루는</p>
             <p>어땠나요?</p>
             <img
-              src={process.env.PUBLIC_URL + `/assets/cloud.png`}
-              alt="cloud"
+              src={process.env.PUBLIC_URL + `/assets/click_me_two.png`}
+              alt="click_me_img"
             />
           </div>
           <div className={styles.col_sec_wrapper}>
+            {/* <div className={styles.msg_box}></div> */}
             <p onClick={() => chg(0)}>오늘 하루 힘들었어요</p>
             <p onClick={() => chg(1)}>오늘도 이룬 게 없는 것 같아요</p>
           </div>
