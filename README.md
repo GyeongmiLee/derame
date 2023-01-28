@@ -6,6 +6,11 @@
   <br>
 </p>
 
+
+## 프로젝트 URL
+
+https://project-dearme-gyeongmi.web.app/
+
 ## 프로젝트 일정 및 전체정리(노션)
 
 [![notion]](https://harmless-patio-fe8.notion.site/Dear-me-33fbc63ed718428d95881151816653b3)
