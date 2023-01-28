@@ -2,7 +2,7 @@
 
 <p align="center">
   <br>
-  <img src="./images/common/dearme_main">
+  <img src="./images/common/dearme_main.png">
   <br>
 </p>
 
