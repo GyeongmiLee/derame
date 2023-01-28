@@ -12,6 +12,8 @@ import MyButton from "./MyButton";
 const MainTab = () => {
   //토글
   const [isToggled, setIsToggled] = useState(false);
+
+  // 핸드폰 화면 안의 페이지 4개 useState t/f로 넣어두기
   const [visible, setVisible] = useState([true, false, false, false]);
   console.log(visible[0], visible[1], visible[2], visible[3]);
 
@@ -27,12 +29,12 @@ const MainTab = () => {
   const [secondData, setSecondData] = useState("");
   const [thirdData, setThirdData] = useState("");
   const [diary, setDiary] = useState("");
+  //focus용
   const firstDataRef = useRef();
   const diaryRef = useRef();
-  // click시 하나만 트루이게
+
+  // click시 하나만 트루이게, num으로 화면 페이지 알아보게한 후, setVisible로 true인 state가 보이게
   const chg = (num) => {
-    // let tmp = [...visible];
-    // console.log(tmp);
     let tmp = visible.map(() => false);
     tmp[num] = true;
     console.log(tmp);
@@ -69,7 +71,6 @@ const MainTab = () => {
             />
           </div>
           <div className={styles.col_sec_wrapper}>
-            {/* <div className={styles.msg_box}></div> */}
             <p onClick={() => chg(0)}>오늘 하루 힘들었어요</p>
             <p onClick={() => chg(1)}>오늘도 이룬 게 없는 것 같아요</p>
           </div>

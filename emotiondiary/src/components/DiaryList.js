@@ -49,7 +49,7 @@ const DiaryList = ({ diaryList }) => {
 
     // sort정렬
     const compare = (a, b) => {
-      if (sortType === "latest") {
+      if (sortType === "latest") { //내림차순 = 최신순
         return parseInt(b.date) - parseInt(a.date);
       } else {
         return parseInt(a.date) - parseInt(b.date);

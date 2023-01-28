@@ -109,7 +109,7 @@ function App() {
       const diaryList = JSON.parse(localData).sort(
         (a, b) => parseInt(b.id) - parseInt(a.id)
       );
-      //localData id보다 1 크게!(내림차순)
+      //localData id보다 1 크게!(내림차순, 가장 마지막으로 저장된 id가 0번째에 있다)
       if (diaryList.length >= 1) {
         dataId.current = parseInt(diaryList[0].id) + 1;
         //초기값으로 설정

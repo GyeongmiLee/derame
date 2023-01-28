@@ -5,7 +5,7 @@ import Footer from "../components/Footer";
 import styles from "./Center.module.css";
 
 const Center = () => {
-  const [isOpen, setIsOpen] = useState(""); //원래 false
+  const [isOpen, setIsOpen] = useState("");
   const [centerData, setCenterData] = useState([]);
 
   const url = `https://apis.data.go.kr/1383000/gmis/teenDscsnSrcnService/getTeenDscsnSrcnList?serviceKey=SpXRW0ibO0mb4Ao%2FAztVDtAJERk%2BvEbOI1fTpnOkH7au9ySG2C1PfuSPRfPrHarZ0E1qbBiouZNNyi%2FgP3pKGA%3D%3D&pageNo=1&numOfRows=111&type=json`;

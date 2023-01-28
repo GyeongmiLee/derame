@@ -23,11 +23,11 @@
 }
 /* clickme 이미지 */
 .col_title img{
+    animation: motion .3s linear infinite alternate;
+    bottom: -22%;
+    left: 117%;
     position: absolute;
-    bottom: 20%;
-    left: 91%;
     width: 55%;
-    animation: motion 0.3s linear infinite alternate;
 }
 @keyframes motion {
     from {margin-bottom: 0;}
